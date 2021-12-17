@@ -5,7 +5,4 @@
 # "double  spaces"      ==> "elbuod  secaps"
 
 def reverse_words(str):
-    new = []
-    for i in str.split(' '):
-        new.append(i[::-1])
-    return ' '.join(new)
+    return ' '.join(word[::-1] for word in str.split(' '))
